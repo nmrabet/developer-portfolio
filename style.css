@@ -1,0 +1,21 @@
+:root {
+    --clr-primary: #151515;
+    --clr-secondary: #4EE1A0;
+    --clr-darkgrey: #242424;
+    --clr-lightgrey: #d9d9d9;
+
+    --fs-body: 18px;
+    --fs-heading-M: 24px;
+    --fs-heading-L: 48px;
+    --fs-heading-XL: 88px;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
