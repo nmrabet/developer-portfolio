@@ -20,41 +20,71 @@
     <title>Frontend Mentor | Single-page developer portfolio</title>
   </head>
   <body>
-    <div class="header">
+    <header class="intro">
       <h3>adamkeyes</h3>
       <div>
         <div class="social-media">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="./assets/images/icon-github.svg" alt="" />
+          <img src="./assets/images/icon-frontend-mentor.svg" alt="" />
+          <img src="./assets/images/icon-linkedin.svg" alt="" />
+          <img src="./assets/images/icon-twitter.svg" alt="" />
         </div>
       </div>
-    </div>
+    </header>
 
     <div class="hero">
-      <h1>Nice to meet you! I'm Adam Keyes.</h1>
-      <p>
-        Based in the UK, I'm a front-end developer passionate about building
-        accessible web apps that users love.
-      </p>
-      <button class="btn-contact">Contact me</button>
+      <picture class="picture">
+        <source
+          srcset="./assets/images/image-profile-desktop.webp"
+          media="(min-width: 1000px)"
+        />
+        <source
+          srcset="./assets/images/image-profile-tablet.webp"
+          media="(min-width: 728px)"
+        />
+        <img
+          src="./assets/images/image-profile-mobile.webp"
+          alt=" Adam Reyes"
+        />
+      </picture>
+      <div class="hero-container">
+        <h1>
+          Nice to meet you! I'm <span class="underline">Adam Keyes</span>.
+        </h1>
+        <p>
+          Based in the UK, I'm a front-end developer passionate about building
+          accessible web apps that users love.
+        </p>
+        <button class="btn-contact">Contact me</button>
+      </div>
     </div>
 
     <main>
       <div class="skills">
-        <h2>HTML</h2>
-        <p>4 Years Experience</p>
-        <h2>CSS</h2>
-        <p>4 Years Experience</p>
-        <h2>JavaScript</h2>
-        <p>4 Years Experience</p>
-        <h2>Accessibility</h2>
-        <p>4 Years Experience</p>
-        <h2>React</h2>
-        <p>3 Years Experience</p>
-        <h2>Sass</h2>
-        <p>3 Years Experience</p>
+        <div class="skill-wrapper">
+          <h2>HTML</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-wrapper">
+          <h2>CSS</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-wrapper">
+          <h2>JavaScript</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-wrapper">
+          <h2>Accessibility</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-wrapper">
+          <h2>React</h2>
+          <p>3 Years Experience</p>
+        </div>
+        <div class="skill-wrapper">
+          <h2>Sass</h2>
+          <p>3 Years Experience</p>
+        </div>
       </div>
 
       <div class="projects">
@@ -63,85 +93,107 @@
           <button class="btn-contact">Contact me</button>
         </div>
 
-        <div class="project__wrapper">
-          <img src="" alt="" />
-          <h4 class="project-title">Design portfolio</h4>
-          <p>HTML CSS</p>
-          <button>View project</button>
-          <button>View code</button>
-        </div>
-
-        <div class="project__wrapper">
-          <img src="" alt="" />
-          <h4 class="project-title">E-learning landing page</h4>
-          <p>HTML CSS</p>
-          <button>View project</button>
-          <button>View code</button>
-        </div>
-
-        <div class="project__wrapper">
-          <img src="" alt="" />
-          <h4 class="project-title">Todo web app</h4>
-          <p>HTML CSS JavaScript</p>
-          <button>View project</button>
-          <button>View code</button>
-        </div>
-
-        <div class="project__wrapper">
-          <img src="" alt="" />
-          <h4 class="project-title">Entertainment web app</h4>
-          <p>HTML CSS JavaScript</p>
-          <button>View project</button>
-          <button>View code</button>
-        </div>
-
-        <div class="project__wrapper">
-          <img src="" alt="" />
-          <h4 class="project-title">Memory Game</h4>
-          <p>HTML CSS JavaScript</p>
-          <button>View project</button>
-          <button>View code</button>
-        </div>
-
-        <div class="project__wrapper">
-          <img src="" alt="" />
-          <h4 class="project-title">Art gallery showcase</h4>
-          <p>HTML CSS JavaScript</p>
-          <button>View project</button>
-          <button>View code</button>
+        <div class="projects-container">
+          <div class="project__wrapper">
+            <div class="container">
+              <img src="./assets/images/thumbnail-project-1-small.webp" alt="" />
+              <div class="overlay"></div>
+              <button class="btn-contact button">View project</button>
+              <button class="btn-contact button btn-space">View code</button>
+            </div>
+            <h4 class="project-title">Design portfolio</h4>
+            <p>HTML CSS</p>
+          </div>
+          <div class="project__wrapper">
+            <div class="container">
+              <img src="./assets/images/thumbnail-project-2-small.webp" alt="" />
+              <div class="overlay"></div>
+              <button class="btn-contact button">View project</button>
+              <button class="btn-contact button btn-space">View code</button>
+            </div>
+            <h4 class="project-title">E-learning landing page</h4>
+            <p>HTML CSS</p>
+          </div>
+          <div class="project__wrapper">
+            <div class="container">
+              <img src="./assets/images/thumbnail-project-3-small.webp" alt="" />
+              <div class="overlay"></div>
+              <button class="btn-contact button">View project</button>
+              <button class="btn-contact button btn-space">View code</button>
+            </div>
+            <h4 class="project-title">Todo web app</h4>
+            <p>HTML CSS JavaScript</p>
+          </div>
+          <div class="project__wrapper">
+            <div class="container">
+              <img src="./assets/images/thumbnail-project-4-small.webp" alt="" />
+              <div class="overlay"></div>
+              <button class="btn-contact button">View project</button>
+              <button class="btn-contact button btn-space">View code</button>
+            </div>
+            <h4 class="project-title">Entertainment web app</h4>
+            <p>HTML CSS JavaScript</p>
+          </div>
+          <div class="project__wrapper">
+            <div class="container">
+              <img src="./assets/images/thumbnail-project-5-small.webp" alt="" />
+              <div class="overlay"></div>
+              <button class="btn-contact button">View project</button>
+              <button class="btn-contact button btn-space">View code</button>
+            </div>
+            <h4 class="project-title">Memory Game</h4>
+            <p>HTML CSS JavaScript</p>
+          </div>
+          <div class="project__wrapper">
+            <div class="container">
+              <img
+                src="./assets/images/thumbnail-project-6-small.webp"
+                alt=""
+              />
+              <div class="overlay"></div>
+              <button class="btn-contact button">View project</button>
+              <button class="btn-contact button btn-space">View code</button>
+            </div>
+            <h4 class="project-title">Art gallery showcase</h4>
+            <p>HTML CSS JavaScript</p>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="contact__intro">
-        <h3>Contact</h3>
-        <p>
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible.
-        </p>
+      <div class="footer__wrapper">
+        <div class="contact__intro">
+          <h3>Contact</h3>
+          <p>
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+
+        <div class="form__wrapper">
+          <form action="">
+            <input type="text" name="fname" id="" placeholder="Name" />
+            <input type="email" name="femail" id="" placeholder="Email" />
+            <textarea
+              name="fmessage"
+              id=""
+              placeholder="Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </form>
+          <button class="btn-contact send">Send message</button>
+        </div>
       </div>
 
-      <form action="">
-        <input type="text" name="fname" id="" placeholder="Name" />
-        <input type="email" name="femail" id="" placeholder="Email" />
-        <textarea
-          name="fmessage"
-          id=""
-          placeholder="Message"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button class="send">Send message</button>
-      </form>
-
-      <div class="contact__footer">
+      <div class="intro end">
         <h2>adamkeyes</h2>
         <div class="social-media">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="./assets/images/icon-github.svg" alt="" />
+          <img src="./assets/images/icon-frontend-mentor.svg" alt="" />
+          <img src="./assets/images/icon-linkedin.svg" alt="" />
+          <img src="./assets/images/icon-twitter.svg" alt="" />
         </div>
       </div>
     </footer>
