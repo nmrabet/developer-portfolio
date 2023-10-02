@@ -40,12 +40,14 @@ body {
 
 .social-media > * {
   margin-left: 1em;
+  cursor: pointer;
 }
 
 .picture {
   display: flex;
   justify-content: center;
   margin-top: -15em;
+  width: 100%;
 }
 
 .underline {
@@ -163,9 +165,16 @@ main {
 }
 
 .btn-space {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
 
 .project-title {
@@ -174,9 +183,6 @@ main {
   font-size: 32px;
 }
 
-.project__wrapper p {
-  margin-bottom: 1.5em;
-}
 
 footer {
   background-color: var(--clr-darkgrey);
@@ -275,20 +281,14 @@ form {
     margin: 4em 0;
   }
 
+  .project__wrapper {
+    width: 45%;
+  }
+
   .picture {
     z-index: -1;
     margin-top: -7em;
     height: 900px;
-  }
-
-  .projects-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .project__wrapper {
-    width: 46%;
   }
 
   .footer__wrapper {
@@ -297,7 +297,8 @@ form {
 }
 
 @media screen and (min-width: 1024px) {
-  .intro, main {
+  .intro,
+  main {
     margin: 0 auto;
   }
 
